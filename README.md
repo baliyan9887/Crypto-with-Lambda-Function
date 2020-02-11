@@ -1,11 +1,5 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
 <h1 align="center">
-  Gatsby's default starter
+  Fetch api with gatsby using amplify and lambda function 
 </h1>
 
 Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
@@ -22,6 +16,25 @@ _Have another more specific idea? You may want to check out our vibrant collecti
     # create a new Gatsby site using the default starter
     gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
     ```
+1.  **Installing Amplify.**
+
+    Navigate into your new site’s directory and start it up.
+
+    ```shell
+    cd my-default-starter/
+    npm install aws-amplify aws-amplify-react
+   
+1.  **Add function and api.**
+
+    Navigate into your new site’s directory and start it up.
+
+    ```shell
+    cd my-default-starter/
+    amplify add function
+    amplify add api 
+    ```
+
+
 
 1.  **Start developing.**
 
@@ -45,6 +58,7 @@ _Have another more specific idea? You may want to check out our vibrant collecti
 A quick look at the top-level files and directories you'll see in a Gatsby project.
 
     .
+    ├── amplify
     ├── node_modules
     ├── src
     ├── .gitignore
@@ -57,6 +71,8 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
     ├── package-lock.json
     ├── package.json
     └── README.md
+
+1.  **`/amplify`**: This directory contains all of the modules of code that your project depends on (amplify packages) are automatically installed.
 
 1.  **`/node_modules`**: This directory contains all of the modules of code that your project depends on (npm packages) are automatically installed.
 
@@ -82,16 +98,5 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
-## 🎓 Learning Gatsby
 
-Looking for more guidance? Full documentation for Gatsby lives [on the website](https://www.gatsbyjs.org/). Here are some places to start:
 
-- **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
-
-- **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
