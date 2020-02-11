@@ -1,0 +1,42 @@
+{
+    "paths": [
+        {
+            "name": "/tps",
+            "lambdaFunction": "crypto",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/coins",
+            "lambdaFunction": "crypto",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "cryptoapi",
+    "apiName": "cryptoapi",
+    "functionArns": [
+        {
+            "lambdaFunction": "crypto"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-tpstest1-dev-160350-authRole",
+        "unAuthRoleName": "amplify-tpstest1-dev-160350-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "crypto",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ],
+    "uuid": "9f5f4aa0"
+}

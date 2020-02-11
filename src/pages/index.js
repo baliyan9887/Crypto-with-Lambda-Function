@@ -5,6 +5,10 @@ import Layout from "../components/layout"
 import Image from "../components/image"
 import SEO from "../components/seo"
 
+import Amplify from "aws-amplify"
+import Config from "../aws-exports" 
+
+Amplify.configure(Config)
 const IndexPage = () => (
   <Layout>
     <SEO title="Home" />
